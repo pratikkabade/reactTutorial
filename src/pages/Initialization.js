@@ -1,5 +1,12 @@
 import React from "react";
 
+function copy01() {
+  navigator.clipboard.writeText("npx create-react-app app");
+}
+function copy02() {
+  navigator.clipboard.writeText("npm start","cd app");
+}
+
 const Initialization = () => {
   return (
     <div>
@@ -81,8 +88,8 @@ const Initialization = () => {
                   />
                 </div>
                 {/* Modal body */}
-                <div className='modal-body'>npx create-react-app app</div>
-                <div className='modal-body'>npm start <br/> cd app</div>
+                <div className='modal-body' onclick={copy01()}>npx create-react-app app</div>
+                <div className='modal-body' onclick={copy02()}>npm start <br/> cd app</div>
                 {/* Modal footer */}
                 <div className='modal-footer'>
                   <button
