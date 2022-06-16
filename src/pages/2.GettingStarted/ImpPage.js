@@ -31,6 +31,7 @@ const ImpPage = () => {
               {/* Modal body */}
               <div className='modal-body'>
 
+                
               </div>
               {/* Modal footer */}
               <div className='modal-footer'>

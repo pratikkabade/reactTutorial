@@ -12,7 +12,7 @@ const Deployment = () => {
         <div className='all'>
             <Commands/>
             <Install/>
-            <Deploy/>/
+            <Deploy/>
         </div>
     </div>
   )
