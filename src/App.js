@@ -1,28 +1,20 @@
-import './App.css';
-import Header from './components/Header';
-import Initialization from './pages/1.Initialization/Initialization';
-import GettingStarted from './pages/2.GettingStarted/GettingStarted';
-import Deployment from './pages/3.Deployment/Deployment';
-import CardOne from './pages/4.Advanced/CardOne';
+import React from "react";
+import Files from "./Files";
+import TutorialMain from "./TutorialMain";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ReactDOM from "react-dom/client";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Header />
-      <div id='1'>
-        <Initialization />
-      </div>
-      <div id='2'>
-        <Deployment />
-      </div>
-      <div id='3'>
-        <GettingStarted />
-      </div>
-      <div id='4'>
-        <CardOne/>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<TutorialMain />} />
+        <Route path='Files' element={<Files />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);

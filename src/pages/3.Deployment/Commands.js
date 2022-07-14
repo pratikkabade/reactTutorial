@@ -28,7 +28,7 @@ const Commands = () => {
               </div>
               {/* Modal body */}
               <div className='modal-body' style={{"width":'400px'}}>
-                "homepage": "https://myusername.github.io/my-app",
+                "homepage": "https://pratikkabade.github.io/myApp",
               </div>
               {/* Modal footer */}
               <div className='modal-footer'>

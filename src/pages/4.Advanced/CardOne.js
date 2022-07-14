@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CardOne = () => {
   return (
@@ -7,11 +8,13 @@ const CardOne = () => {
         Advanced
       </h1>
       <div className='all'>
-        <div
-          className='dvs'
-          data-bs-toggle='modal'
-          data-bs-target='#myModal12'>
-            Visit the page
+        <div className='dvs' data-bs-toggle='modal' data-bs-target='#myModal12'>
+          Visit the page <br />
+        </div>
+        <div className='dvs'>
+          <Link className='nav-item nav-link' to='/Files'>
+            Files
+          </Link>
         </div>
       </div>
       {/* The Modal */}
@@ -36,16 +39,10 @@ const CardOne = () => {
                 Close
               </button>
               <a
-                href="git-client://clone?repo=https%3A%2F%2Fgithub.com%2Fpratikkabade%2FjavaTutorial"
+                href='git-client://clone?repo=https%3A%2F%2Fgithub.com%2Fpratikkabade%2FjavaTutorial'
                 type='button'
                 class='btn btn-outline-primary'>
                 Open
-              </a>
-              <a
-                href="https://github.com/pratikkabade/reactTutorial/tree/main/codes"
-                type='button'
-                class='btn btn-primary'>
-                Visit
               </a>
             </div>
           </div>
