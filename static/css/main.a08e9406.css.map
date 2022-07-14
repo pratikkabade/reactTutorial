@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.a08e9406.css","mappings":"AAAA,cAGE,+BAAgC,CADhC,yBAA8B,CAG9B,iBAAkB,CADlB,UAEF","sources":["App.css"],"sourcesContent":[".subSection p {\n  margin: 0px !important;\n  margin-bottom: 30px !important;\n  border-bottom: 2px solid skyblue;\n  width: 100%;\n  text-align: center;\n}"],"names":[],"sourceRoot":""}
