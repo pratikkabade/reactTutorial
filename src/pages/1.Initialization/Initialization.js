@@ -1,19 +1,7 @@
-import React from "react";
-
-function copy01() {
-  navigator.clipboard.writeText("npx create-react-app app");
-}
-function copy02() {
-  navigator.clipboard.writeText("npm start","cd app");
-}
-
 const Initialization = () => {
   return (
-    <div>
-      <h1 className='noSelect' style={{ marginTop: 85 }}>
-        React Basics{" "}
-      </h1>
-      <h2 className='noSelect' style={{ margin: 30, textAlign: "center" }}>
+    <div style={{ marginTop: 85 }}>
+      <h2 className='noSelect' style={{ margin: 30, textAlign: "center" }} id='top'>
         Initialization{" "}
       </h2>
       <div className='all'>
@@ -43,7 +31,8 @@ const Initialization = () => {
                 <div className='modal-body '>
                   <a className='btn btn-primary' href='https://nodejs.org/'>
                     Node <i className='fa-solid fa-up-right-from-square' />
-                  </a>
+                  </a>{" "}
+                  <br /> <br />
                   <a
                     className='btn btn-primary'
                     href='https://code.visualstudio.com/download'>
@@ -71,7 +60,7 @@ const Initialization = () => {
             className='sub-dvs'
             data-bs-toggle='modal'
             data-bs-target='#myModal2'>
-            1. npx create-react-app app <br/>
+            1. npx create-react-app app <br />
             2. npm start
           </div>
           {/* The Modal */}
@@ -88,8 +77,10 @@ const Initialization = () => {
                   />
                 </div>
                 {/* Modal body */}
-                <div className='modal-body' onclick={copy01()}>npx create-react-app app</div>
-                <div className='modal-body' onclick={copy02()}>npm start <br/> cd app</div>
+                <div className='modal-body'>npx create-react-app app</div>
+                <div className='modal-body'>
+                  cd app <br /> npm start
+                </div>
                 {/* Modal footer */}
                 <div className='modal-footer'>
                   <button

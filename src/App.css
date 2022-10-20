@@ -1,7 +1,193 @@
-.subSection p {
-  margin: 0px !important;
-  margin-bottom: 30px !important;
-  border-bottom: 2px solid skyblue;
-  width: 100%;
-  text-align: center;
+.App {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--accent);
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+@media screen and (max-width: 900px) {
+    .App {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.App h1 {
+    text-decoration: underline;
+    border-top: 2px solid black;
+    margin-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+form p {
+    color: red;
+}
+
+.compart {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+}
+
+#test {
+    color: red
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+nav li {
+    display: inline-block
+}
+
+nav p {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none
+}
+
+.all {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    scroll-behavior: smooth
+}
+
+.all img {
+    width: 75px;
+}
+
+.dvs {
+    background-color: #f1fdff;
+    box-shadow: var(--shadowsmall);
+    border-radius: 20px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    height: 100%
+}
+
+.dvs:hover {
+    background-color: #f7feff;
+    box-shadow: var(--shadowtiny);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center
+}
+
+p {
+    color: var(--accent);
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 20px !important;
+    margin-bottom: 5px !important
+}
+
+.modal-body {
+    cursor: text;
+    user-select: all
+}
+
+.modal-body span {
+    color: green
+}
+
+#dvsTop {
+    background-color: #fbfeff
+}
+
+a {
+    text-decoration: none !important
+}
+
+#customNav {
+    background-color: rgba(234, 249, 255, .6) !important;
+    backdrop-filter: blur(5px) !important
+}
+
+.active {
+    background-color: #b1e9ff;
+    border-radius: 20px
+}
+
+#hrtLogo {
+    box-shadow: var(--shadowsmall)
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: left;
+    padding: 30px 10%;
+    height: 25px;
+    background-color: var(--accentbackgorund);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(7px)
+}
+
+.heading {
+    font-size: 4px;
+    color: #000;
+    font-weight: 800;
+    text-align: center
+}
+
+.heading span {
+    color: var(--accent)
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: left
+}
+
+header .navbar li {
+    margin-left: 5%
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    transition: .2s
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent);
+    padding: 10px 0;
+    cursor: pointer
+}
+
+.education {
+    background: var(--background2)
 }
