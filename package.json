@@ -1,20 +1,29 @@
 {
-  "name": "react-tutorial",
+  "name": "my-app",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://projecttutorials.github.io/reactTutorial",
+  "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
+    "@hookform/resolvers": "^2.9.9",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.27.2",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.65",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "axios": "^1.1.2",
+    "firebase": "^9.12.1",
     "gh-pages": "^4.0.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-middleware": "^2.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.0.3",
+    "react-hook-form": "^7.37.0",
+    "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
-    "save-dev": "^0.0.1-security",
-    "web-vitals": "^2.1.4"
+    "typescript": "^4.8.4",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,8 +50,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "react-router-dom": "^6.3.0"
   }
 }
